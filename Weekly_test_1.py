@@ -7,29 +7,29 @@
 
 # Asking for user input
 print("\n")
-f = input("1) First name: ")
-l = input("2) Last name:\b")
-pp = input("3) Prefix of phone number (e.g., 123): ")
-n = input("5) Street Number of your residence : ")
-sn = input("5) Street name : ")
 
-A1 = input("6) City: ")
-A2 = input("7) State: ")
-A3 = input("8) Zip code: ")
+# Collecting User Details
+first_name = input("1) First name: ")
+last_name = input("2) Last name:\b")
+phone_prefix = input("3) Prefix of phone number (e.g., 123): ")
+street_number = input("5) Street Number of your residence : ")
+street_name = input("5) Street name : ")
+
+city = input("6) City: ")
+state= input("7) State: ")
+zip_code = input("8) Zip code: ")
 
 # Constructing the required return values
-fullname = f + " " + l
-phonenumber = pp+"-xxx-xxxx"
-fulladdress1 = n + " " + sn
-fulladdress2 = A1 + ", " + str(A2) + " " + int(A3)
+full_name = first_name + " " + last_name
+phone_number = phone_prefix+"-xxx-xxxx"
+full_address = street_number + " " + street_name
+city_state_zip = city + ", " + state + " " + zip_code # Fixes conversion issue
 
-# Display the results
-print("\n")
+# Display the collected information 
 print("Collected Information:")
-print("\n")
-print("Full Name: ",fullname)
-print("Phone Number: ",phonenumber)
+print("Full Name: ",full_name)
+print("Phone Number: ",phone_number)
 print("Full Address: ")
-print(fulladdress1)
-print(fulladdress1)
+print(full_address)
+print(city_state_zip) # Fixes duplicate full address print issue
 
