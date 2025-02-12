@@ -12,7 +12,7 @@ print("\n")
 first_name = input("1) First name: ")
 last_name = input("2) Last name:\b")
 phone_prefix = input("3) Prefix of phone number (e.g., 123): ")
-street_number = input("5) Street Number of your residence : ")
+street_number = input("4) Street Number of your residence : ")
 street_name = input("5) Street name : ")
 
 city = input("6) City: ")
